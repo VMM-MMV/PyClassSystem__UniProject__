@@ -1,6 +1,8 @@
-
-from Human import *
-human = Human()
-human.cry()
 from Peasant import *
-peasant = Peasant()
+from King import *
+
+if __name__ == "__main__":
+    peasant = Peasant()
+    king = King()
+    if peasant.burriedWhere() == king.burriedWhere():
+        print("Then who cares.")
